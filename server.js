@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 })
 
 // It allow us to accept JSON in the body.
-// Solved issue with destructuring body (domingo a la mañana).
+
 app.use(express.json())
 
 app.use("/api/transaction", transactionRoutes)
